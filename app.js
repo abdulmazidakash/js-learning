@@ -100,8 +100,8 @@ let first_Name1 = 'akash';
 // javascript operator 
 
 /*
- * Arithmatic operator
- * 
+ * Arithmetic operator
+ * Comparison operator
  */
 
 let x = 10;
@@ -130,3 +130,64 @@ let q = 20;
 q = q -1;
 q--; //decrement
 console.log('Decrement ${q}');
+
+//google search: javascript operator precedence
+//comparison operator
+
+let r =5;
+let s = 15;
+console.log(r == s);
+console.log(r === s);
+console.log(r !== s);
+console.log(r > s);
+console.log(r < s);
+console.log(r >= s);
+console.log(r <= s);
+
+/*logical operator
+
+"&&" and operator
+"||" or operator
+"!(p+q)" not operator
+
+*/
+
+/**
+ * Assignment operator
+ */
+
+let i = 10;
+let j = 20;
+i = i + j;
+i += j;
+
+i = i - j;
+i -= j;
+
+i = i * j;
+i *= j;
+
+i = i / j;
+i /= j;
+i %= j;
+i **= j;
+
+console.log(i);
+
+/**
+ * Conditional (Ternary) Operator
+ */
+
+let t = a > b ? 'True' : 'False';
+let g = a > b ? true : false;
+
+console.log(t);
+
+if(a > b){
+	console.log('True');
+}
+else{
+	console.log('False');
+}
+
+let firstName = 'Akash';
