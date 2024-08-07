@@ -89,6 +89,44 @@ const person = {
 	firstName: 'Akash',
 	age: 30,
 };
+
 person.country = 'bangladesh';
 person.age = 32;
+
 console.log(person);
+
+let first_Name1 = 'akash';
+
+// javascript operator 
+
+/*
+ * Arithmatic operator
+ * 
+ */
+
+let x = 10;
+let y = 20;
+let z = x + y;
+
+console.log(x + y);
+/*
+let userInput = prompt('Enter a Number');
+let number = parseInt(userInput);
+
+if(number % 2 === 0){
+	console.log('${number} is even number');
+}
+else{
+	console.log('{number} is odd number');
+}
+*/
+
+let p = 10;
+p = p + 1;
+p++; //increment
+console.log('Increment ${p}');
+
+let q = 20;
+q = q -1;
+q--; //decrement
+console.log('Decrement ${q}');
