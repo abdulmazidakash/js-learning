@@ -58,7 +58,7 @@ console.log(add(5, 6));
 
 function greet(firstName) {
 	function sayHello(){
-		alert('Hello ' + firstName);
+		// alert('Hello ' + firstName);
 	}
 	return sayHello();
 }
