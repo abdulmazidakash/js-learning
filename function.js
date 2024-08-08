@@ -29,7 +29,7 @@ let maths = function (x, y) {
 	return x * y;
 };
 console.log(maths(3, 4));
-console.log(maths(4, 4));
+console.log(maths(4, 4));+
 console.log(maths(4, 5));
 
 function newFunc() {
@@ -45,4 +45,21 @@ let sqNumbers = numbers.map(function (number) {
 }
 );
 
-console.log(sqNumbers);
+/*console.log(sqNumbers);
+
+let add = function(x, y) {
+	return x + y;
+};
+console.log(add(5, 6));
+*/
+
+let add = (x, y) => x + y;
+console.log(add(5, 6));
+
+function greet(firstName) {
+	function sayHello(){
+		alert('Hello ' + firstName);
+	}
+	return sayHello();
+}
+greet('Akash');
