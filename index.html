@@ -4,28 +4,81 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Js Learning</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<style>
-		button{
+		body{
+			text-align: center;
+		}
+		button,
+		#form input[type='submit']
+		{
 			background: crimson;
 			padding: 20px 30px;
 			color: white;
 			font-size: 18px;
 			border-radius: 10px;
 			border: none ;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+		button:hover, #form input[type='submit']:hover {
+			background: #262626;
+		}
+
+		#form{
+			width: 90%;
+			padding: 3%;
+		}
+		#form label{
+			display: block;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			text-align: left;
+
+		}
+		#form input,
+		#form textarea {
+			width: 90%;
+			padding: 10px 4%;
+		}
+		#form input[type='submit'] {
+			width: 100%;
+			padding: 10px 4%;
+			margin-top: 10px;
 		}
 	</style>
 </head>
 <body>
 	<h1 id="hello">Javascript</h1>
 
-	<button id="btn">Subscribe</button>
+	<!-- button attribute: ondblclick, onmouseout, onmouseenter. -->
 
-	<script src="dataTypes.js"></script>
+	<button ondblclick="subscribe()" id="btn">Subscribe</button>
+	<h2 id="text"></h2>
+
+	<button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+
+	<!-- form attribute: onkeypress, onkeyup. -->
+
+	<form action="" id="form" onkeyup="keyPress()">
+		<label for="">Name</label>
+		<input type="text" name="" id="" placeholder="Enter Your Name">
+		<label for="">Email</label>
+		<input type="email" name="" id="" placeholder="Enter Your Email">
+		<label for="">Message</label>
+		<textarea name="" id="" placeholder="Enter Your Message"></textarea>
+		<input type="submit" value="Send Message">
+	</form>
+
+	<script src="dataTypes.js">dgf</script>
 	<script src="app.js"></script>
 	<script src="operatorPrecedence.js"></script>
 	<script src="function.js"></script>
 	<script src="object.js"></script>
 	<script src="array.js"></script>
+	<script src="events.js"></script>
 	
 </body>
 </html>
