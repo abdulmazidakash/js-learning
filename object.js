@@ -68,7 +68,7 @@ const obj3 = {
 	z: 3,
 };
 
-const objFinal = { ...obj1, ...obj2, ...obj3};
+const objFinal = { ...obj1, ...obj2, ...obj3}; 
 // const objFinal = Object.assign(target, source);
 // const objFinal = Object.assign(obj1, obj2, obj3);
 console.log(objFinal);
