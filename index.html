@@ -7,50 +7,12 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<style>
-		body{
-			text-align: center;
-		}
-		button,
-		#form input[type='submit']
-		{
-			background: crimson;
-			padding: 20px 30px;
-			color: white;
-			font-size: 18px;
-			border-radius: 10px;
-			border: none ;
-			transition: 0.5s;
-			cursor: pointer;
-		}
-		button:hover, #form input[type='submit']:hover {
-			background: #262626;
-		}
-
-		#form{
-			width: 90%;
-			padding: 3%;
-		}
-		#form label{
-			display: block;
-			margin-bottom: 10px;
-			margin-top: 10px;
-			text-align: left;
-
-		}
-		#form input,
-		#form textarea {
-			width: 90%;
-			padding: 10px 4%;
-		}
-		#form input[type='submit'] {
-			width: 100%;
-			padding: 10px 4%;
-			margin-top: 10px;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<!-- body attribute: onload, onresize, onscroll-->
+
+<body onscroll="onScroll()">
 	<h1 id="hello">Javascript</h1>
 
 	<!-- button attribute: ondblclick, onmouseout, onmouseenter. -->
@@ -63,14 +25,26 @@
 	<!-- form attribute: onkeypress, onkeyup. -->
 
 	<form action="" id="form" onkeyup="keyPress()">
-		<label for="">Name</label>
+		<label for="">Name:</label>
 		<input type="text" name="" id="" placeholder="Enter Your Name">
-		<label for="">Email</label>
+		<label for="">Email:</label>
 		<input type="email" name="" id="" placeholder="Enter Your Email">
-		<label for="">Message</label>
-		<textarea name="" id="" placeholder="Enter Your Message"></textarea>
+		<label for="">Message:</label>
+		<textarea name="" id="textarea" placeholder="Enter Your Message"></textarea>
 		<input type="submit" value="Send Message">
 	</form>
+
+	<ul id="ul">
+		<li id="li">Home</li>
+		<li>Home</li>
+		<li>Home</li>
+		<li>Home</li>
+		<li>Home</li>
+	</ul>
+
+	<!-- <div>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis numquam soluta aut praesentium sint, fugit, perferendis aliquam quo repellendus itaque, dolorem totam aspernatur. Provident consequatur libero, beatae ab vel odit ipsa! Ex officia quaerat sint modi minima aliquid, veritatis, aspernatur repellat placeat alias quae? Illo, quod nisi. Placeat sint labore assumenda ducimus repellendus odio nobis id reiciendis voluptas omnis, quidem, corporis eaque, ipsam esse accusantium quisquam facilis architecto ipsa earum commodi? Tempore, consectetur dolore qui, velit corrupti neque veniam, quo minus quod non doloribus voluptatum accusantium quae aperiam. Repellendus culpa quisquam nihil laboriosam. Culpa dolore sit, voluptas enim modi alias est, officiis, fugit exercitationem possimus ut. Cumque vero eveniet fugit, sunt inventore quisquam quaerat iure sint placeat possimus quis praesentium adipisci illum dolorem eligendi, quam consectetur unde ratione quae, doloribus aliquid? Ratione iste provident temporibus, ipsum voluptatibus debitis. Dolores officiis eveniet voluptatibus sapiente animi, laudantium amet alias praesentium ipsam totam? Illum perferendis quasi sapiente at ipsam aut molestiae enim quod doloremque dolorem veritatis blanditiis delectus alias iste incidunt animi explicabo rem quo, qui suscipit sint? Illum, nesciunt? Eum ea nesciunt eligendi, natus sequi perferendis enim est iusto quasi odit porro aperiam ratione exercitationem quae laboriosam, a impedit delectus corrupti explicabo! Autem sapiente illum vitae nobis ullam sed nam vel inventore repudiandae asperiores explicabo, dolores doloribus officia sit quo tenetur harum a exercitationem voluptatum corporis facilis. Eaque amet illum accusantium officiis esse reprehenderit quaerat quidem vitae assumenda similique ratione, est dolores veritatis error, autem recusandae consectetur deleniti reiciendis blanditiis ea culpa porro iusto, commodi consequatur? Rem necessitatibus modi consequuntur reprehenderit quis suscipit, ut assumenda, esse nam atque voluptatum asperiores excepturi perferendis doloremque dolorum omnis fuga aliquid nemo debitis exercitationem quod. Modi quidem enim molestias culpa cumque facere perspiciatis neque dolorum voluptas quam vitae, similique sapiente vero nesciunt, pariatur quo! Ex rem neque praesentium! Officiis praesentium maiores numquam aperiam tempore sunt laborum impedit, quis quo vero, doloremque totam nisi veniam dolores quas, accusantium rem magnam similique corrupti culpa deserunt! In voluptas et repellat similique doloremque odio rem unde, repellendus quibusdam odit, possimus qui animi, assumenda doloribus? Alias repellat porro voluptatem, quos dignissimos expedita blanditiis cupiditate dolorum, quod eaque est debitis quae. Vitae magni quibusdam facere perferendis at fugit excepturi, dolores atque cupiditate, minus, eveniet assumenda nihil commodi rem! Ea, voluptates? Reiciendis officiis minus, voluptas recusandae sunt exercitationem molestiae deserunt cupiditate aspernatur voluptatem itaque nesciunt iure error quas modi necessitatibus quos voluptatibus quasi expedita odio! Reprehenderit, nesciunt ducimus provident nihil cum rem recusandae quibusdam laboriosam. Suscipit dolorum sed iure molestias, debitis dicta repudiandae? Est dolorem tenetur vitae ut consequatur dolores consequuntur amet non eius esse modi perferendis, itaque quis eaque! Similique sed est optio voluptates dignissimos expedita, veritatis, dicta nemo sit repudiandae adipisci. Obcaecati dolores voluptatem temporibus dolorem est amet accusamus nemo quam aspernatur? Sit dignissimos laudantium, nostrum ullam consequatur quaerat perferendis veniam deserunt quis ratione officia! Quidem veritatis enim officia maxime exercitationem in voluptatem obcaecati modi autem sequi, quaerat repellat iusto iure incidunt nobis, et explicabo rerum quia quibusdam. Sint distinctio amet praesentium quibusdam quam voluptate enim. Excepturi, possimus minima? Quasi, doloribus vitae unde minus in iusto praesentium optio dolorum, omnis est sed, error nostrum corporis maiores eaque velit nulla labore? Architecto dolor quia ipsa rem saepe cupiditate in asperiores enim autem distinctio non excepturi molestias, veniam, beatae quod adipisci impedit id amet. Sequi eligendi voluptates neque id autem fugit itaque ullam dignissimos cum in adipisci quisquam officiis sapiente, aperiam tempore quas laudantium, cumque possimus. Vero odio temporibus repellendus veniam error, quas similique dignissimos porro ex necessitatibus ducimus quis totam dolore iste harum, labore adipisci explicabo quo rerum in voluptate mollitia. Repellendus aperiam eum, omnis quis cum reiciendis ipsa ratione, aut natus sapiente quas nobis nam odio itaque autem molestiae nihil expedita. Vel distinctio ut aliquam voluptates minima modi laboriosam molestias sequi, id inventore, ad doloribus aut, eos reprehenderit quo perspiciatis saepe ipsam porro quia. Enim perferendis architecto labore expedita ullam amet. Vel ad non impedit. Ad vel enim maxime molestias adipisci assumenda possimus aperiam quasi vitae sunt minima aspernatur doloremque magni, culpa natus harum eius, cupiditate aliquid, consectetur recusandae. Architecto saepe commodi veritatis adipisci accusamus dolorum reprehenderit qui fugit distinctio! Facere animi sapiente laborum sit odit, nostrum nemo repellat ut provident corporis? Quo modi odit, omnis nam, sed porro saepe expedita, impedit voluptatum tenetur animi. Quasi, iusto odit. Architecto qui expedita placeat ratione ut quaerat totam dicta provident velit, aliquid ipsam dolorem consequuntur quibusdam amet sapiente soluta quisquam nemo hic, eos corrupti. Ab pariatur magni eos nobis aliquid aut laborum vero quaerat aspernatur hic, ipsa, facere in fuga deserunt odit sequi voluptas expedita ullam excepturi totam quidem? Repudiandae sint asperiores nisi nihil architecto fuga. Doloribus, nulla? Distinctio veniam cum inventore at accusantium, enim excepturi rem aliquam quo labore adipisci magni iure omnis mollitia, quae sequi vitae ex sit neque. Minus tempore facere numquam atque accusantium adipisci! Tenetur rem, neque sed tempore ut facere adipisci, reiciendis reprehenderit quae nihil aut eos soluta minus, temporibus placeat amet repudiandae non nulla distinctio corrupti quibusdam perferendis corporis? Nulla deleniti soluta beatae dicta sint, suscipit aperiam? Minus illo temporibus saepe porro asperiores debitis perferendis officia laborum exercitationem molestias consectetur dignissimos, odio ea aliquam. Aperiam sequi similique repellat unde quaerat distinctio, minus odio, dolorem quidem hic dignissimos nesciunt ut animi consequatur accusamus quo soluta cumque molestiae, inventore aspernatur eius iusto perferendis. Veniam itaque fugiat modi rem facere, explicabo placeat odio unde doloribus deleniti dignissimos animi ullam temporibus magni, sequi illum quis! Modi nostrum harum perspiciatis ullam earum voluptatibus corrupti quae, quasi libero delectus incidunt magni? Sed maiores, ut praesentium molestias et explicabo ab nemo nam earum tempore nulla sapiente, voluptatem ipsum. Veniam assumenda cum autem quam maiores. Tenetur exercitationem deserunt fuga non assumenda ipsam porro ut minima aliquam consequatur, labore maiores vero facilis velit modi vitae. Eveniet, quo. Quo commodi asperiores temporibus, nam fugit exercitationem, enim quia maiores dolores doloremque illo tempore officia fugiat, quisquam id a consectetur. A praesentium aliquid ullam eaque officiis voluptatum porro distinctio error, maxime at ducimus dolorem impedit, quae iste nisi accusamus!</p>
+	</div> -->
 
 	<script src="dataTypes.js">dgf</script>
 	<script src="app.js"></script>
