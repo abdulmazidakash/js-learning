@@ -31,3 +31,11 @@ let startTime = Date.now();
 simpleTask();
 let endTime = Date.now();
 console.log('The task took ${endTime - startTime} millisecond to complete');
+
+console.log(myTime);
+console.log(myTime / 1000);
+console.log(Math.floor(myTime / 1000));
+
+console.log(myDate.getDate());
+console.log(myDate.getDay());
+console.log(myDate.getFullYear());
