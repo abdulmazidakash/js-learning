@@ -60,5 +60,14 @@ console.log(r.toPrecision(3)); //try avoid this method
 
 console.log(r.toFixed(2));
 
+let newNum = Number.EPSILON;
+newNum = Number.MAX_VALUE;
+newNum = Number.MIN_VALUE;
+newNum = Number.POSITIVE_INFINITY;
+newNum = Number.NEGATIVE_INFINITY;
+newNum = Number.NaN;
+
+console.log(newNum);
+
 
 
