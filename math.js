@@ -27,3 +27,18 @@ console.log(Math.cos((0 * Math.PI) / 180));
 // random number result 
 console.log(Math.random().toFixed(2) * 10 + 2);
 console.log(Math.floor (Math.random().toFixed(2) * 10 + 2));
+
+// ludo game example 
+
+let upperValue = 6;
+let lowerValue = 1;
+let resultValue = Math.ceil(Math.random() * upperValue);
+
+console.log(resultValue);
+
+// ludo game live example 
+function rollDice() {
+	let randomNumber = Math.floor(Math.random() * 6) + 1;
+	let imageSource = 'img/' + randomNumber + '.png';
+	document.getElementById('ludo').src = imageSource;
+}
