@@ -28,7 +28,7 @@ console.log(Math.cos((0 * Math.PI) / 180));
 console.log(Math.random().toFixed(2) * 10 + 2);
 console.log(Math.floor (Math.random().toFixed(2) * 10 + 2));
 
-// ludo game example 
+// ludo game debug example 
 
 let upperValue = 6;
 let lowerValue = 1;
