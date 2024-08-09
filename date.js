@@ -15,3 +15,19 @@ console.log(myDate.toLocaleDateString('default', {
 let updateDate = new Date('01-15-2002');
 
 console.log(updateDate);
+
+let myTime = Date.now();
+
+console.log(myTime);
+
+let myTime1 = Date.now();
+function simpleTask() {
+	for (let step = 0; step < 100; step++) {
+		console.log('Walking east to one step');
+	}
+}
+
+let startTime = Date.now();
+simpleTask();
+let endTime = Date.now();
+console.log('The task took ${endTime - startTime} millisecond to complete');
