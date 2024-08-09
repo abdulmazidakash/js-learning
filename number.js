@@ -13,7 +13,9 @@ console.log(new Number(l));
 
 const a = 10;
 const b = 20;
-const c = 30;
+// const c = 30;
+
+const c = 248;
 
 const d = 'javascript';
 
@@ -42,3 +44,21 @@ while (nums != Infinity) {
 }
 
 document.getElementById('title').innerHTML = value;
+
+console.log(c.toString(16));
+
+const g = 300;
+const h = new Number(300);
+
+// const r = 9856.5435;
+const r = 9856.5435;
+
+console.log(g==h);
+console.log(g===h);
+
+console.log(r.toPrecision(3)); //try avoid this method
+
+console.log(r.toFixed(2));
+
+
+
