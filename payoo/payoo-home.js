@@ -35,9 +35,19 @@ document.getElementById('btn-cash-out').addEventListener('click', function(e){
 
 		document.getElementById('account-balance').innerText = newBalance;
 	}else{
-		console.log('wrong pin number');
+		alert('wrong pin number');
 
 	}
 
+});
+
+document.getElementById('btn-add-money-toggle').addEventListener('click', function(e){
+
+	document.getElementById('add-money-form').classList.remove('hidden');
+	document.getElementById('cash-out-form').classList.add('hidden');
 })
 
+document.getElementById('btn-cash-out-toggle').addEventListener('click', function(e){
+	document.getElementById('cash-out-form').classList.remove('hidden');
+	document.getElementById('add-money-form').classList.add('hidden');
+})

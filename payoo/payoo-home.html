@@ -11,28 +11,21 @@
 	<section class="flex justify-center items-center min-h-screen">
 		<div>
 			<!-- stats card start -->
-			<div class="stats bg-base-100 border-base-300 border">
+			<div class="stats bg-base-100 border-base-300 border text-center flex justify-center">
 				<div class="stat">
 					<div class="stat-title">Account balance</div>
 					<div id="account-balance" class="stat-value">89400</div>
 					<div class="stat-actions">
-					<button class="btn btn-xs btn-success">Add funds</button>
-					</div>
-				</div>
-
-				<div class="stat">
-					<div class="stat-title">Current balance</div>
-					<div class="stat-value">$89,400</div>
-					<div class="stat-actions">
-					<button class="btn btn-xs">Withdrawal</button>
-					<button class="btn btn-xs">Deposit</button>
+					<button id="btn-add-money-toggle" class="btn btn-xs btn-success">Add funds</button>
+					
+					<button id="btn-cash-out-toggle" class="btn btn-xs btn-error">Cash Out</button>
 					</div>
 				</div>
 			</div>
 				<!-- stats card end -->
 				<div class="divider"></div>
 				<!-- add money section start -->
-				<fieldset hidden class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+				<fieldset id="add-money-form"  class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 hidden">
 					<legend class="fieldset-legend">Add Money</legend>
 
 					<label class="label">Add Money</label>
@@ -44,8 +37,9 @@
 					<button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
 				</fieldset>
 				<!-- add money section end  -->
+
 				<!-- cash out section start -->
-				<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+				<fieldset  id="cash-out-form" class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
 					<legend class="fieldset-legend">Cash Out</legend>
 
 					<label class="label">cash out</label>
