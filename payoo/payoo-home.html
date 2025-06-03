@@ -14,7 +14,7 @@
 			<div class="stats bg-base-100 border-base-300 border">
 				<div class="stat">
 					<div class="stat-title">Account balance</div>
-					<div class="stat-value">$89,400</div>
+					<div id="account-balance" class="stat-value">89400</div>
 					<div class="stat-actions">
 					<button class="btn btn-xs btn-success">Add funds</button>
 					</div>
@@ -32,18 +32,31 @@
 				<!-- stats card end -->
 				<div class="divider"></div>
 				<!-- add money section start -->
-				<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-				<legend class="fieldset-legend">Add Money</legend>
+				<fieldset hidden class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+					<legend class="fieldset-legend">Add Money</legend>
 
-				<label class="label">Add Money</label>
-				<input id="input-add-money" type="text" class="input" placeholder="Add money" />
+					<label class="label">Add Money</label>
+					<input id="input-add-money" type="text" class="input" placeholder="Add money" />
 
-				<label class="label">Pin</label>
-				<input id="input-pin-number" type="password" class="input" placeholder="enter your pin" />
+					<label class="label">Pin</label>
+					<input id="input-pin-number" type="password" class="input" placeholder="enter your pin" />
 
-				<button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
-			</fieldset>
+					<button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+				</fieldset>
 				<!-- add money section end  -->
+				<!-- cash out section start -->
+				<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+					<legend class="fieldset-legend">Cash Out</legend>
+
+					<label class="label">cash out</label>
+					<input id="input-cash-out" type="text" class="input" placeholder="cash out" />
+
+					<label class="label">Pin</label>
+					<input id="input-cash-out-pin-number" type="password" class="input" placeholder="enter your pin" />
+
+					<button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+				</fieldset>
+				<!-- cash out section end  -->
 		</div>
 	</section>
 
