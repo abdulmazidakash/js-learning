@@ -4,6 +4,10 @@ document.getElementById('btn-add-money').addEventListener('click', function(){
 	const pinNumber = getInputFieldValueById('input-pin-number');
 	console.log(addMoney, pinNumber);
 
+	if(isNaN(addMoney)){
+		alert('Please enter a valid amount to add.');
+		return;
+	}
 	if(pinNumber === 1234){
 		const accountBalance = getTextFieldValueById('account-balance');
 		const newBalance = addMoney + accountBalance;
@@ -22,6 +26,10 @@ document.getElementById('btn-cash-out').addEventListener('click', function(){
 	const inputCashOut = getInputFieldValueById('input-cash-out');
 	const inputPinNumber = getInputFieldValueById('input-cash-out-pin-number');
 
+	if(isNaN(inputCashOut)){
+		alert('Please enter a valid amount to cash out.');
+		return
+	}
 	if(inputPinNumber === 1234){
 		const accountBalance = getTextFieldValueById('account-balance');
 		const newBalance = accountBalance - inputCashOut;
