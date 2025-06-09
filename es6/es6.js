@@ -173,6 +173,7 @@ function goodMorning(name){
 	console.log('Good night', name);
 }
 
+
 greeting(greetingHandler, 'akash');
 greeting(goodNight, 'akash');
 greeting(goodMorning, 'akash');
