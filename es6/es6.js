@@ -158,23 +158,29 @@
 // console.log('watch 2--->', watch2());
 
 //callback function
-function greeting(greetingHandler, name){
-	greetingHandler(name);
+// function greeting(greetingHandler, name){
+// 	greetingHandler(name);
+// }
+
+// function greetingHandler(name){
+// 	console.log('call greeting handler for', name);
+// }
+
+// function goodNight(name){
+// 	console.log('Good night', name);
+// }
+// function goodMorning(name){
+// 	console.log('Good night', name);
+// }
+
+
+// greeting(greetingHandler, 'akash');
+// greeting(goodNight, 'akash');
+// greeting(goodMorning, 'akash');
+
+
+console.time('loop');
+for(let i = 0; i< 1000000; i++){
+	2*2+2*8888;
 }
-
-function greetingHandler(name){
-	console.log('call greeting handler for', name);
-}
-
-function goodNight(name){
-	console.log('Good night', name);
-}
-function goodMorning(name){
-	console.log('Good night', name);
-}
-
-
-greeting(greetingHandler, 'akash');
-greeting(goodNight, 'akash');
-greeting(goodMorning, 'akash');
-
+console.timeEnd('loop');
