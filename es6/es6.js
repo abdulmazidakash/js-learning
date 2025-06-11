@@ -179,8 +179,8 @@
 // greeting(goodMorning, 'akash');
 
 
-console.time('loop');
-for(let i = 0; i< 1000000; i++){
-	2*2+2*8888;
-}
-console.timeEnd('loop');
+// console.time('loop');
+// for(let i = 0; i< 1000000; i++){
+// 	2*2+2*8888;
+// }
+// console.timeEnd('loop');
